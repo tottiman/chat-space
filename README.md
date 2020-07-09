@@ -40,7 +40,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|comment|string|
+|content|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
