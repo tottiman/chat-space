@@ -1,14 +1,15 @@
 .sideBar
   .sideBar__header
     .sideBar__box 
-      %p.sideBar__user-name toshiki
+      %p.sideBar__user-name
+        = current_user.name
       %ul.sideBar__menu
         %li.sideBar__edit-btn
         = link_to "#", class: "sideBar__btn sideBar__btn--edit" do
           = icon('far', 'edit', class: "sideBar__btn--icon")
         %li.sideBar__setting-btn
-        = link_to "#", class: "sideBar__btn sideBar__btn--setting" do
-          = icon('fas', 'cog', class: "sideBar__btn--icon")
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog')
 
   .sideBar__grouplist
     .sideBar__contents
