@@ -1,0 +1,16 @@
+.sideBar
+  .sideBar__header
+    .sideBar__box 
+      %p.sideBar__user-name toshiki
+      %ul.sideBar__menu
+        %li.sideBar__edit-btn
+        = link_to "#", class: "sideBar__btn sideBar__btn--edit" do
+          = icon('far', 'edit', class: "sideBar__btn--icon")
+        %li.sideBar__setting-btn
+        = link_to "#", class: "sideBar__btn sideBar__btn--setting" do
+          = icon('fas', 'cog', class: "sideBar__btn--icon")
+
+  .sideBar__grouplist
+    .sideBar__contents
+      .sideBar__top-content TECHCAMP
+      .sideBar__bottom-content まだない

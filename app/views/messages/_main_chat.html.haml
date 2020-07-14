@@ -1,0 +1,25 @@
+.mainChat
+  .mainChat__header
+    .mainChat__leftbox
+      %h2.mainChat__current-group チームE
+      %h2.mainChat__current-member  Member：toshiki
+    = link_to '#', class:"mainChat__rightbox" do
+      Edit
+      -# = link_to 'Edit' #
+      
+      
+  .mainChat__message
+    .mainChat__commentbox
+      .mainChat__name toshiki
+      %h3.mainChat__time 2020/07/12(Mon) 11:38
+    .mainChat__timeline 筋トレ行く？
+
+
+  .form
+    %form.mainChat__contents
+      .input-box
+        %input{"type": "text", class: "input-box__text", "placeholder": "type a message", }
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value:"SEND", class: "submit-btn"}
