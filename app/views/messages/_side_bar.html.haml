@@ -5,13 +5,17 @@
         = current_user.name
       %ul.sideBar__menu
         %li.sideBar__edit-btn
-        = link_to "#", class: "sideBar__btn sideBar__btn--edit" do
+        = link_to "/groups/new", class: "sideBar__btn sideBar__btn--edit" do
           = icon('far', 'edit', class: "sideBar__btn--icon")
         %li.sideBar__setting-btn
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog')
 
   .sideBar__grouplist
-    .sideBar__contents
-      .sideBar__top-content TECHCAMP
-      .sideBar__bottom-content まだない
+    - current_user.groups.each do |group|
+      .sideBar__contents
+        = link_to '#' do
+          .sideBar__top-content
+            = group.name
+          .sideBar__bottom-contents
+            メッセージはまだありません
