@@ -2,10 +2,11 @@
   .mainChat__header
     .mainChat__leftbox
       %h2.mainChat__current-group
-      = 
+        = @group.name
       %h2.mainChat__current-member 
-      = 
-    = link_to '#', class:"mainChat__rightbox" do
+        - @group.users.each do|user|
+          = user.name
+    = link_to edit_group_path(@group), class:"mainChat__rightbox" do
       Edit
       -# = link_to 'Edit' #
       
