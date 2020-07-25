@@ -75,3 +75,7 @@ gem 'factory_bot_rails'
 
 gem 'faker'
 gem 'jquery-rails'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end

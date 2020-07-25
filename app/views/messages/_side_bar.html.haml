@@ -8,8 +8,8 @@
         = link_to "/groups/new", class: "sideBar__btn sideBar__btn--edit" do
           = icon('far', 'edit', class: "sideBar__btn--icon")
         %li.sideBar__setting-btn
-        = link_to edit_user_path(current_user) do
-          = icon('fas', 'cog')
+        = link_to edit_user_path(current_user), class: "sideBar__btn sideBar__btn--setting" do
+          = icon('fas', 'cog', class: "sideBar__btn--icon")
 
   .sideBar__grouplist
     - current_user.groups.each do |group|

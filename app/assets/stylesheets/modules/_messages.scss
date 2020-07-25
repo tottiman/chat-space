@@ -12,11 +12,13 @@
 .sideBar{
   width: 300px;
   
+  
   &__header{
     background-color: #253141;
     height: 100px;
     display: flex;
     align-items: center;
+    
     
     
   }
@@ -50,12 +52,14 @@
   }
 
   &__grouplist{
+    overflow: scroll;
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    
   }
 
   &__contents{
-    color: #ffffff;
+    
     font-weight: bold;
     list-style: none;
     
@@ -63,13 +67,16 @@
 
   &__top-content{
     font-size: 15px;
-    padding: 20px 20px 5px 20px;  
+    padding: 20px 20px 5px 20px; 
+    color: #ffffff;
+    
   }
 
-  &__bottom-content{
+  &__bottom-contents{
     font-size: 11px;
     padding: 0 20px 40px 20px;
-
+    color: #ffffff;
+    
 
   }
 
@@ -90,13 +97,14 @@
   &__current-group{
     color: #333333;
     font-size: 20px;
-    padding: 35px 0 15px 40px;
+    padding: 35px 0 0 40px;
 
   }
   &__current-member{
     color: #999999;
     font-size: 12px;
     padding-left: 40px;
+    
   
   }
 
