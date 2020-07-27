@@ -81,7 +81,7 @@ gem 'capistrano-rbenv'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano3-unicorn'
-gem 'fog-aws'
+gem 'fog'
 
 group :production do
   gem 'unicorn', '5.4.1'
